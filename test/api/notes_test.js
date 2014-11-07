@@ -63,9 +63,9 @@ describe('basic notes crud', function() {
     });
   });
 
-  it('should validate a note before saving it', function(done) {
+  it('should reject an invalidate note', function(done) {
     chai.request('http://localhost:3000')
-    .put('/api/notes/' + id)
+    .post('/api/notes/' + id)
     .send({noteBody: "this won't validate"})
     .end(function(){
       expect(err.message).to.eql('there was an error!');

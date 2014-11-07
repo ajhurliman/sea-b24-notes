@@ -5,7 +5,7 @@ var Note = require('../models/note');
 Note.schema.path('noteBody').validate(function (val) {
   //We definitely want at least one of these words in every note
   return /sample|test|hello|world/i.test(val);
-}, "there was an error!");
+}, 'there was an error!');
 
 module.exports = function(app) {
   app.get('/api/notes', function(req ,res) {
