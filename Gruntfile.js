@@ -7,7 +7,7 @@ module.exports = function(grunt) {
       options: {
         node: true
       },
-      src: ['models/**/*.js', 'server.js', 'routes/**/*.js']
+      src: ['models/**/*.js', 'index.js', 'routes/**/*.js']
     },
 
     simplemocha: {

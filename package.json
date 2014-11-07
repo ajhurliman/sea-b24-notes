@@ -2,7 +2,7 @@
   "name": "sea-b24-notes",
   "version": "0.1.0",
   "description": "a note taking web app",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
